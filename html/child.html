@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<style>
+	*{
+		box-sizing: border-box;
+	}
+	body{
+		margin: 0;
+	}
+	a{
+		text-decoration: none;
+	}
+	li{
+		
+		list-style: none;
+	}
+	.header{
+		width: 100%;
+		height: 100px;
+/*		border: 1px solid red;*/
+	}
+	.logo{
+		float: left;
+		height: 80px;
+		line-height: 80px;
+		margin-left: 20px;
+/*		border: 1px solid black;*/
+	}
+	.inp{
+		width: 40%;
+		margin: 0 auto;
+		height: 100%;
+/*		border: 1px solid black;*/
+	}
+	.inp-right,.inp-left{
+		width: 50px;
+		height: 35px;
+		float: left;
+		background-color:rgba(227,215,215,1.00);
+/*		border: 1px solid #666;*/
+		margin-top: 25px;
+	}
+	.inp-right span{
+		line-height: 35px;
+		padding: 5px;
+		font-size: 12px;
+	}
+	.inp input{
+		float: left;
+		height: 35px;
+		width: 420px;
+		margin-top: 25px;
+	}
+	.nav-left{
+		float: left;
+		width: 15%;
+		height: 800px;
+		background-color: #444;
+/*		border: 1px solid blue;*/
+	}
+	.nav-left div{
+		width: 100%;
+		height: 50px;
+		line-height: 50px;
+		background-color: #444;
+		border-bottom: 1px solid #000;
+		text-align: center;
+	}
+	.nav-left li{
+		display: none;
+	}
+	.nav-left div a{
+		color: #fff;
+	}
+	.nav-left div span{
+		position: relative;
+		font-size: 10px;
+		left: 70px;
+/*		color: #fff;*/
+	}
+	.content{
+	    width: 82%;
+		height: auto;
+		float: left;
+		display: flex;
+		flex-flow:row wrap;
+		margin-left: 40px;
+		padding: 10px;
+		border: 1px solid #444;
+	}
+	.content .c-child{
+		flex: 0 0 33%;
+		height: 420px;
+		width: 300px;
+/*		border: 1px solid red;*/
+	}
+	.car-big{
+		margin: 20px auto;;
+		width: 90%;
+		height: 230px;
+/*		border: 1px solid #555;*/
+	}
+	.car-sm-box{
+		display: flex;
+		width: 80%;
+		height: 70px;
+		margin: 0 auto;
+/*		border: 1px solid red;*/
+	}
+	.car-big img ,.car-sm-box img{
+		height: 100%;
+		width: 100%;
+	}
+	.car-sm-box .car-sm{
+		flex: 1;
+		height: 70px;
+		margin-left: 5px;
+		border: 1px solid blue;
+	} 
+	.car-detail{
+		width: 100%;
+		height: 50px;
+		margin-top: 10px;
+		margin-left: 20px;
+	}
+	.car-detail p{
+		font-size: 18px;
+	}
+	.car-price{
+		color: red;
+	}
+	.content-top{
+		width: 100%;
+		height: 50px;
+	}
+	.content-top li{
+		float: left;
+		width: 100px;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		border: 1px solid #777;
+	}
+	.content-top li a{
+		font-weight: bolder;
+		text-decoration: none;
+	}
+</style>
+<body>
+  <div class="header">
+  	  <div class="logo"><a href=""><span style="font-size: 35px;color: red;font-family:'abril-fatface' ">ALC</span>
+	<span style="font-size: 20px; color: red">allcar.com</span></a></div>
+  	  <div class="inp"><div class="inp-left"></div><input type="text"><div class="inp-right"><span>搜一下</span></div>
+  </div>
+  <div>
+     <div class="nav-left">
+   	   <div><a href="">跑车<span>▼</span></a>
+   	     <li>法拉利</li>
+   	     <li>兰博基尼</li>
+   	     <li>玛莎拉蒂</li>
+   	   </div>
+   	   <div><a href="">SUV<span>▼</span></a>
+   	     <li>Jeep</li>
+   	     <li>悍马</li>
+   	     <li>林肯</li>
+   	   </div>
+   	   <div><a href="">敞篷<span>▼</span></a>
+   	     <li>宝马</li>
+   	     <li>保时捷</li>
+   	     <li>阿斯顿马丁</li>
+   	   </div>
+   	   <div><a href="">客车<span>▼</span></a>
+   	     <li></li>
+   	     <li></li>
+   	     <li></li>
+   	   </div>
+     </div>
+     <div class="content">
+        <div class="content-top">
+        	<li><a href="" style="color: green">默认排序</a></li>
+        	<li style="border-left: none;"><a href="">最新发布</a></li>
+        	<li style="border-left: none;"><a href="">价格</a></li>
+        	<li style="border-left: none;"><a href="">车龄</a></li>
+        </div>
+     	<div class="c-child">
+			    <div class="car-big"><img src="../images/car2.jpg" alt=""></div>
+				<div class="car-sm-box">
+					<div class="car-sm"><img src="../images/car2.jpg" alt=""></div>
+					<div class="car-sm"><img src="../images/car3.jpg" alt=""></div>
+					<div class="car-sm"><img src="../images/car4.jpg" alt=""></div>
+					<div class="car-sm"><img src="../images/car5.jpg" alt=""></div>
+				</div>
+				<div class="car-detail">
+					<p>法拉利</p>
+					<p class="car-price">￥188.2万</p>
+				</div>
+			</div>
+    <div class="c-child">
+			    <div class="car-big"><img src="../images/car01.jpg" alt=""></div>
+				<div class="car-sm-box">
+					<div class="car-sm"><img src="../images/car02.jpg" alt=""></div>
+					<div class="car-sm"><img src="../images/car03.jpg" alt=""></div>
+					<div class="car-sm"><img src="../images/car04.jpg" alt=""></div>
+					<div class="car-sm"><img src="../images/car05.jpg" alt=""></div>
+				</div>
+				<div class="car-detail">
+					<p>法拉利F12berlinetta</p>
+					<p class="car-price">￥236.2万</p>
+				</div>
+			</div><div class="c-child">
+			    <div class="car-big"><img src="../images/car001.jpg" alt=""></div>
+				<div class="car-sm-box">
+					<div class="car-sm"><img src="../images/car001.jpg" alt=""></div>
+					<div class="car-sm"><img src="../images/car002.jpg" alt=""></div>
+					<div class="car-sm"><img src="../images/car003.jpg" alt=""></div>
+					<div class="car-sm"><img src="../images/car004.jpg" alt=""></div>
+				</div>
+				<div class="car-detail">
+					<p>兰博基尼-Aventador</p>
+					<p class="car-price">￥666.89-801.15万</p>
+				</div>
+			</div>
+    <div class="c-child">
+			    <div class="car-big"><img src="../images/car2.jpg" alt=""></div>
+				<div class="car-sm-box">
+					<div class="car-sm"><img src="../images/car2.jpg" alt=""></div>
+					<div class="car-sm"><img src="../images/car3.jpg" alt=""></div>
+					<div class="car-sm"><img src="../images/car4.jpg" alt=""></div>
+					<div class="car-sm"><img src="../images/car5.jpg" alt=""></div>
+				</div>
+				<div class="car-detail">
+					<p>法拉利</p>
+					<p class="car-price">￥188.2万</p>
+				</div>
+			</div>
+    <div class="c-child">
+			    <div class="car-big"><img src="../images/car01.jpg" alt=""></div>
+				<div class="car-sm-box">
+					<div class="car-sm"><img src="../images/car02.jpg" alt=""></div>
+					<div class="car-sm"><img src="../images/car03.jpg" alt=""></div>
+					<div class="car-sm"><img src="../images/car04.jpg" alt=""></div>
+					<div class="car-sm"><img src="../images/car05.jpg" alt=""></div>
+				</div>
+				<div class="car-detail">
+					<p>法拉利F12berlinetta</p>
+					<p class="car-price">￥236.2万</p>
+				</div>
+			</div><div class="c-child">
+			    <div class="car-big"><img src="../images/car001.jpg" alt=""></div>
+				<div class="car-sm-box">
+					<div class="car-sm"><img src="../images/car001.jpg" alt=""></div>
+					<div class="car-sm"><img src="../images/car002.jpg" alt=""></div>
+					<div class="car-sm"><img src="../images/car003.jpg" alt=""></div>
+					<div class="car-sm"><img src="../images/car004.jpg" alt=""></div>
+				</div>
+				<div class="car-detail">
+					<p>兰博基尼-Aventador</p>
+					<p class="car-price">￥666.89-801.15万</p>
+				</div>
+			</div>
+    
+     </div>
+  </div>
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/child.js"></script>
+</html>

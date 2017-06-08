@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="../css/zhuce.css">
+</head>
+<body>
+ <div class="box">
+   <form action="" onSubmit="return zhuce()">
+ 	<div class="box-zhuce">
+  	   <div class="main-title">欢迎您登录网站，如果您未拥有账户，则可在此 注册</div>
+  	   <div class="login-box">
+  	      <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 账号：<input type="text" id="text" class="white"><span id="inline-span">* 字母,数字,下划线组成,字母开头,4-11位</div>
+  	      </span>
+  	      <div id="error" style="color: red;"></div>
+  	      <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;密码：<input type="password" id="password"><span id="inline-span2">* 不超过12位数字、英文和英文符号组成</span></div>
+  	      
+  	      <div id="error2" style="color: red;"></div>
+  	      <div>确认密码：<input type="password" id="password2"><span id="inline-span3"></span></div>
+  	      <div id="error3" style="color: red;"></div>
+  	     <input type="submit" value="立即注册" class="red">
+  	   </div>
+  	</div>
+  </form>
+ </div>
+</body>
+<script src="../js/zhuce.js"></script>
+</html>
